@@ -92,6 +92,9 @@ fn main() {
             5 => {
                 let id = handler_input_id();
                 inventory.delete(id);
+
+                println!("Enter to continue...");
+                io::stdin().read_line(&mut String::new()).unwrap();
             }
             6 => break,
             _ => println!("Invalid input."),
