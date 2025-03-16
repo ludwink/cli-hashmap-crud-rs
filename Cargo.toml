@@ -1,0 +1,10 @@
+[package]
+name = "cli-hashmap-crud"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+#time = "0.3.39"
+# local-offset for now_local()
+time = { version = "0.3.39", features = ["local-offset"] }
+uuid = {version = "1.16.0", features = ["v4"]}
